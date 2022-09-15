@@ -1,6 +1,6 @@
 ---
-title: 记第一次部署博客到服务器
-date: 2022-09-15 13:03:33
+title: Record the first deployment of blog to server
+date: 2022-09-15 14:13:37
 tags: 技术&生活
 ---
 
@@ -18,7 +18,7 @@ tags: 技术&生活
 
 ​		申请一个Github账号，创建一个新的仓库，仓库名尽量和账号名相同，主要是为了避免因为路径引发的问题。
 
-![image-20220915132529356](C:\Users\CJX\AppData\Roaming\Typora\typora-user-images\image-20220915132529356.png)
+![image-20220915132529356](.\Recordthefirstdeploymentofblogtoserver\image-20220915132529356.png)
 
 ##**3、连接仓库**
 
@@ -43,18 +43,18 @@ tags: 技术&生活
 
 ​		这个地方有点坑，在直接使用hexo d命令进行部署的时候，hexo只会讲public下的文件上传到github，这就导致之前在本地配置好的themes目录下的配置文件没有被上传，最终导致生成的博客是人家的demo。。。后续查阅资料发现想实现个人博客需要爱仓库中建立新的分支，专门存放博文、主题等，于是根据前人的经验建立了一个名为hexo的分支，并将本地文件上传到对应分支。结果重新部署的时候出现了请求报404的情况，诊断为请求地址出错，后续排查到_congfig.yml中配置的项目url有问题于是进行修改。重新部署后发现仍然报404，就在走投无路之下，决定尝试Ctrl+F5清空缓存试试。结果，成了！于是写下这篇博客记录一下。
 
-![image-20220915134319840](C:\Users\CJX\AppData\Roaming\Typora\typora-user-images\image-20220915134319840.png)
+![image-20220915134319840](.\Recordthefirstdeploymentofblogtoserver\image-20220915134319840.png)
 
 ##**4.后续计划**
 
 ​		后续发布新博客的时候按照如下步骤进行发布
 
-![image-20220915134718841](C:\Users\CJX\AppData\Roaming\Typora\typora-user-images\image-20220915134718841.png)
+![image-20220915134718841](.\Recordthefirstdeploymentofblogtoserver\image-20220915134718841.png)
 
 只不过main分支为master分支，hexo分支为reshexo分支。
 
 ​		偷偷记录和997的生活，并在需要的时候给她惊喜。想在博客中新增音乐播放功能，因为看到她歌单里有我这前推的《wings of piano》,得想个办法给弄博客里来。另外昨天和997一起听了好久的歌，这里歪个楼纪念一下。
 
-![image-20220915135057503](C:\Users\CJX\AppData\Roaming\Typora\typora-user-images\image-20220915135057503.png)
+![image-20220915135057503](.\Recordthefirstdeploymentofblogtoserver\image-20220915135057503.png)
 
 ok！今天的分享就到这里了！希望对大家有所帮助，谢谢。
