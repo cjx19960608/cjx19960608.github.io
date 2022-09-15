@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="#记录第一次部署博客到服务器 ##1、站点托管还是云服务器？ ​		在完成Hexo使用cactus主题后的本地开发后，需要讲我们的博客服务部署到远程服务器上，可以根据个人需要选择使用Github Pages或Gitee Pages进行免费的网页托管，或是购买使用阿里云服务器直接部署。 ​		不同的选择存在不同的优缺点，Github Pages免费、使用更广泛，因为外网的限制访问不够稳定，加载速度比">
+<meta property="og:type" content="article">
+<meta property="og:title" content="记第一次部署博客到服务器">
+<meta property="og:url" content="https://cjx19960608.github.io/2022/09/15/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/index.html">
+<meta property="og:site_name" content="c9j9x7">
+<meta property="og:description" content="#记录第一次部署博客到服务器 ##1、站点托管还是云服务器？ ​		在完成Hexo使用cactus主题后的本地开发后，需要讲我们的博客服务部署到远程服务器上，可以根据个人需要选择使用Github Pages或Gitee Pages进行免费的网页托管，或是购买使用阿里云服务器直接部署。 ​		不同的选择存在不同的优缺点，Github Pages免费、使用更广泛，因为外网的限制访问不够稳定，加载速度比">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="c:\Users\CJX\AppData\Roaming\Typora\typora-user-images\image-20220915132529356.png">
+<meta property="og:image" content="c:\Users\CJX\AppData\Roaming\Typora\typora-user-images\image-20220915134319840.png">
+<meta property="og:image" content="c:\Users\CJX\AppData\Roaming\Typora\typora-user-images\image-20220915134718841.png">
+<meta property="og:image" content="c:\Users\CJX\AppData\Roaming\Typora\typora-user-images\image-20220915135057503.png">
+<meta property="article:published_time" content="2022-09-15T05:03:33.000Z">
+<meta property="article:modified_time" content="2022-09-15T05:51:28.489Z">
+<meta property="article:author" content="CJX">
+<meta property="article:tag" content="技术&amp;生活">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:\Users\CJX\AppData\Roaming\Typora\typora-user-images\image-20220915132529356.png">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>记第一次部署博客到服务器</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="https://github.com/probberechts/hexo-theme-cactus">Projects</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/2022/09/14/hello-world/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://cjx19960608.github.io/2022/09/15/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://cjx19960608.github.io/2022/09/15/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/&text=记第一次部署博客到服务器"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://cjx19960608.github.io/2022/09/15/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/&title=记第一次部署博客到服务器"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://cjx19960608.github.io/2022/09/15/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/&is_video=false&description=记第一次部署博客到服务器"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=记第一次部署博客到服务器&body=Check out this article: https://cjx19960608.github.io/2022/09/15/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://cjx19960608.github.io/2022/09/15/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/&title=记第一次部署博客到服务器"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://cjx19960608.github.io/2022/09/15/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/&title=记第一次部署博客到服务器"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://cjx19960608.github.io/2022/09/15/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/&title=记第一次部署博客到服务器"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://cjx19960608.github.io/2022/09/15/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/&title=记第一次部署博客到服务器"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://cjx19960608.github.io/2022/09/15/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/&name=记第一次部署博客到服务器&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://cjx19960608.github.io/2022/09/15/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/&t=记第一次部署博客到服务器"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        记第一次部署博客到服务器
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">CJX</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2022-09-15T05:03:33.000Z" itemprop="datePublished">2022-09-15</time>
+        
+      
+    </div>
+
+
+      
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link-link" href="/tags/%E6%8A%80%E6%9C%AF-%E7%94%9F%E6%B4%BB/" rel="tag">技术&生活</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p>#<strong>记录第一次部署博客到服务器</strong></p>
+<p>##<strong>1、站点托管还是云服务器？</strong></p>
+<p>​		在完成<code>Hexo</code>使用<code>cactus</code>主题后的本地开发后，需要讲我们的博客服务部署到远程服务器上，可以根据个人需要选择使用Github Pages或Gitee Pages进行免费的网页托管，或是购买使用阿里云服务器直接部署。</p>
+<p>​		不同的选择存在不同的优缺点，Github Pages免费、使用更广泛，因为外网的限制访问不够稳定，加载速度比较慢，但不会受到站点内内容管理的影响；Gitee Pages同样也免费，Gitee作为国内版的GitHub，访问速度优秀，但容易收到内容管理的影响；云服务器收费，速度快，受购买的云服务商内容管理，租用最低要求的服务器，一年收费几百元，资金充沛的小伙伴可以选择这种方式。</p>
+<p>​		本站使用的是Github Pages进行站点托管。</p>
+<p>##<strong>2、建立仓库</strong></p>
+<p>​		申请一个Github账号，创建一个新的仓库，仓库名尽量和账号名相同，主要是为了避免因为路径引发的问题。</p>
+<p><img src="C:\Users\CJX\AppData\Roaming\Typora\typora-user-images\image-20220915132529356.png" alt="image-20220915132529356"></p>
+<p>##<strong>3、连接仓库</strong></p>
+<p>###3.1 安装hexo-deployer-git</p>
+<p><code>npm install hexo-deployer-git --save</code></p>
+<p>###3.2 修改配置</p>
+<p><code>deploy:   type: git   repo: https://github.com/cjx19960608/cjx19960608.github.io.git    branch: master</code></p>
+<p>​		注意上面的 repo 地址并不是仓库的地址，而是你下载&#x2F;克隆项目时弹出的那个地址，type 如果是 git 就选择 SSH。</p>
+<p>###3.3生成token</p>
+<p>​		git在发布的时候回对当前发布人进行身份的验证，验证方式是通过用户名加对应项目的密钥来进行校验。生成的token最好保留，以免丢失。</p>
+<p>###3.4上传仓库</p>
+<p>​		这个地方有点坑，在直接使用hexo d命令进行部署的时候，hexo只会讲public下的文件上传到github，这就导致之前在本地配置好的themes目录下的配置文件没有被上传，最终导致生成的博客是人家的demo。。。后续查阅资料发现想实现个人博客需要爱仓库中建立新的分支，专门存放博文、主题等，于是根据前人的经验建立了一个名为hexo的分支，并将本地文件上传到对应分支。结果重新部署的时候出现了请求报404的情况，诊断为请求地址出错，后续排查到_congfig.yml中配置的项目url有问题于是进行修改。重新部署后发现仍然报404，就在走投无路之下，决定尝试Ctrl+F5清空缓存试试。结果，成了！于是写下这篇博客记录一下。</p>
+<p><img src="C:\Users\CJX\AppData\Roaming\Typora\typora-user-images\image-20220915134319840.png" alt="image-20220915134319840"></p>
+<p>##<strong>4.后续计划</strong></p>
+<p>​		后续发布新博客的时候按照如下步骤进行发布</p>
+<p><img src="C:\Users\CJX\AppData\Roaming\Typora\typora-user-images\image-20220915134718841.png" alt="image-20220915134718841"></p>
+<p>只不过main分支为master分支，hexo分支为reshexo分支。</p>
+<p>​		偷偷记录和997的生活，并在需要的时候给她惊喜。想在博客中新增音乐播放功能，因为看到她歌单里有我这前推的《wings of piano》,得想个办法给弄博客里来。另外昨天和997一起听了好久的歌，这里歪个楼纪念一下。</p>
+<p><img src="C:\Users\CJX\AppData\Roaming\Typora\typora-user-images\image-20220915135057503.png" alt="image-20220915135057503"></p>
+<p>ok！今天的分享就到这里了！希望对大家有所帮助，谢谢。</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a target="_blank" rel="noopener" href="https://github.com/probberechts/hexo-theme-cactus">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://cjx19960608.github.io/2022/09/15/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://cjx19960608.github.io/2022/09/15/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/&text=记第一次部署博客到服务器"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://cjx19960608.github.io/2022/09/15/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/&title=记第一次部署博客到服务器"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://cjx19960608.github.io/2022/09/15/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/&is_video=false&description=记第一次部署博客到服务器"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=记第一次部署博客到服务器&body=Check out this article: https://cjx19960608.github.io/2022/09/15/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://cjx19960608.github.io/2022/09/15/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/&title=记第一次部署博客到服务器"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://cjx19960608.github.io/2022/09/15/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/&title=记第一次部署博客到服务器"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://cjx19960608.github.io/2022/09/15/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/&title=记第一次部署博客到服务器"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://cjx19960608.github.io/2022/09/15/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/&title=记第一次部署博客到服务器"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://cjx19960608.github.io/2022/09/15/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/&name=记第一次部署博客到服务器&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://cjx19960608.github.io/2022/09/15/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/&t=记第一次部署博客到服务器"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2022
+    CJX
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="https://github.com/probberechts/hexo-theme-cactus">Projects</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script> 
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Umami Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
