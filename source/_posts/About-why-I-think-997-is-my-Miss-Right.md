@@ -14,7 +14,7 @@ tags: 杂记&爱情
 
 第二天，忍不住向997发了早安消息。结果人家一大早就在开会，试探性的给她发了我超喜欢的高司令的《City Of Stars》，回了我一首超甜的歌《Goldfish Memory》。金鱼的记忆哈哈哈，很放松的感jio。品味真的很好，但跟我不相上下哈哈哈哈！结果晚上997又要加班。。。这孩子太辛苦了，一定要好好对她，不能让她压力太大。
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=700 height=86 src="//music.163.com/outchain/player?type=2&id=1915296918&auto=0&height=66"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="//music.163.com/outchain/player?type=2&id=1915296918&auto=0&height=66"></iframe>
 
 那周的周末我和同事约着去杭州玩，因为后面要和997见面所以想着给她带点吃的，同事有去过杭州对杭州美食了解很深的，告诉我说知味观不错，于是在知味观吃完午饭后我顺便买了一盒东坡酥，希望不难吃hh。
 
@@ -26,11 +26,13 @@ tags: 杂记&爱情
 
 ![3cdf531cf1d21c07512376d20b95d49](./About-why-I-think-997-is-my-Miss-Right/3cdf531cf1d21c07512376d20b95d49.jpg)
 
-<video src="./de0a1a08a52d747c6d01ef1fbad400e2.mp4"></video>
+<video width= 100% height="400" controls>
+<source src="./de0a1a08a52d747c6d01ef1fbad400e2.mp4">
+</video>
 
 豁！这体现个人审美能力的时候不就来了嘛！无巧不成书，我和997都对那个视频里的场景很满意，我满意是因为整体看上去很大气，那对翅膀在我看来是对婚后生活的期待与向往，后面又细看了几遍视频，发现屋顶左右两边有类似钢琴的设计，配上之前的翅膀，瞬间让我联想到之前在《古树旋律》里碰到的一首叫《wings of piano》的曲子。跟997说了之后，她立马去听了。后来在她喜欢的歌单中也看到这首，让我感觉我的思考真的有影响到她，我认为这是感情中很重要的一块，也坚定了对她的喜欢。
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=700 height=86 src="//music.163.com/outchain/player?type=2&id=28377225&auto=0&height=66"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="//music.163.com/outchain/player?type=2&id=28377225&auto=0&height=66"></iframe>
 
 到杭州的第二个下午，徒步一天的我们找了个ktv休息，跟997汇报了行程，问我唱歌好不好听，给我激动的，这语音的机会，他不就来了吗！！！我故作矜持（希望997看到不要打我哈哈哈）说取决于听的人，便想着回宾馆唱给她听。好巧不巧，同事打算晚上回去玩剧本杀，这不坏事儿了嘛，我果断说有突发运维推辞掉了（dbq！xdm_(:з」∠)_），后面等9老师加完班，我们从天文到地理聊了一个多小时，都快忘了给她唱歌的事儿哈哈哈。
 
@@ -50,7 +52,7 @@ tags: 杂记&爱情
 * 在Roseonly官网挑了很久最后选择了一款经典透明花盒包装的永生玫瑰。（只买了单朵，以后有忙内了买多朵的555）永生玫瑰相比于没处理过的玫瑰更好打理，且存活时间更长，希望我们的爱情能长长久久。
 * 打算当面给997唱一首粤语的《约定》（没错，这就是为啥我一直在学粤语！）
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=700 height=86 src="//music.163.com/outchain/player?type=2&id=64443&auto=0&height=66"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="//music.163.com/outchain/player?type=2&id=64443&auto=0&height=66"></iframe>
 
 这周末997本来要加班，可后来又不加了，没来得及订票，下周提前订好票周末不管她加不加班，出不出差我都要过去跟她表白！希望她能答应！佛祖保佑！
 
