@@ -9,8 +9,7 @@ tags: the reason why i start write blogs
       </h1>
 
 <main><div class="page-content"><h3>#My website(s)</h3>
-
-<p><strong>Blog</strong>: <a href="https://c9j9x7/">c9j9x7</a></p>
+<p><strong>Blog</strong>: <a href="https://c9j9x7.top/">c9j9x7</a></p>
 
 <ul><li>Yep,I want to make some records of my life.In this personal blog,i'll share what i learn from books ,videos or experiences.In addition,the most important reason for blogging is that i may meet the most important person in my life.Someday in the future ,i wish her know that i will always love her.💖💖</li></ul>
 
